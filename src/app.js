@@ -44,7 +44,7 @@ const PORT = 8080
 app.use(express.json()); //has access to our res and req......json format
 app.use(express.urlencoded({extended:false}))
 app.use(cors({
-    origin : ['http://localhost:3000','https://frontend-three-brown-54.vercel.app'],
+    origin : ['http://localhost:3000','https://frontend-lvn3xpg93-waynahmic.vercel.app/'],
     credentials:true
 }
 ))
