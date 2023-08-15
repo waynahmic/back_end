@@ -45,7 +45,9 @@ app.use(express.json()); //has access to our res and req......json format
 app.use(express.urlencoded({extended:false}))
 app.use(cors({
     origin : ['http://localhost:3000','https://frontend-lvn3xpg93-waynahmic.vercel.app/'],
-    credentials:true
+    credentials:true,
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+    allowedHeaders: 'Content-Type,Authorization',
 }
 ))
 app.use(task_route)
